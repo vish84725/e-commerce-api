@@ -1,0 +1,50 @@
+module.exports = [
+	{
+		"_id": "5f243efe9d95c700390caac7",
+		"topDeal": true,
+		"status": true,
+		"title": "Household ",
+		"description": "Household goods. Household goods are goods and products used within households. All types of households available including air conditioners, baby items, baking dishes, beds/bedframes, blankets, bedding, linens, towels, blenders, mixers, bookcases, books, bureaus, dressers, wardrobes, cabinets, can openers, chairs, clothes dryers, coffee makers, computers, cooking utensils, couches, sofas, love seats, ",
+		"dealPercent": 25,
+		"categoryId": "5f250238dcb97d00397ac112",
+		"productId": null,
+		"imageUrl": "https://ik.imagekit.io/kplhvthqbi/tr:dpr-auto,tr:w-auto/1596210831119_original_Group_3029_2x_GyL5zfrvm.png",
+		"imageId": "5f243e90a0af626666fb6975",
+		"dealType": "CATEGORY",
+		"filePath": "/1596210831119_original_Group_3029_2x_GyL5zfrvm.png",
+		"categoryName": "Household",
+		"productName": null
+	},
+	{
+		"_id": "5f2440499d95c700390caacb",
+		"topDeal": true,
+		"status": true,
+		"title": " Personal cares ",
+		"description": "All types of personal care products available at exciting offers ",
+		"dealPercent": 60,
+		"categoryId": "5f25028edcb97d00397ac114",
+		"productId": null,
+		"imageUrl": "https://ik.imagekit.io/kplhvthqbi/tr:dpr-auto,tr:w-auto/1596211148829_original_Group_3030_2x_Ddh-8DW_p.png",
+		"imageId": "5f243fcea0af626666fb6ad5",
+		"dealType": "CATEGORY",
+		"filePath": "/1596211148829_original_Group_3030_2x_Ddh-8DW_p.png",
+		"categoryName": "Cosmetics ",
+		"productName": null
+	},
+	{
+		"_id": "5f6322b757e4f700396960b6",
+		"topDeal": true,
+		"status": true,
+		"title": " Nescafe Coffee",
+		"description": "Get a 25% instant discount on the purchase of Nescafe",
+		"dealPercent": 25,
+		"categoryId": "5f250aa0dcb97d00397ac157",
+		"productId": null,
+		"imageId": "5f63229cba36df5d0cee3b29",
+		"imageUrl": "https://ik.imagekit.io/kplhvthqbi/tr:dpr-auto,tr:w-auto/1600332442630_original_Group_3031_2x_ySCz_dsUd.png",
+		"filePath": "/1600332442630_original_Group_3031_2x_ySCz_dsUd.png",
+		"dealType": "CATEGORY",
+		"productName": null,
+		"categoryName": "Beverages"
+	}
+]
