@@ -25,6 +25,7 @@ export const ProductSchema = new mongoose.Schema({
 		{
 			productStock: { type: Number },
 			unit: { type: String },
+			expieryDate: {type: Date},
 			price: { type: Number },
 			enable: { type: Boolean, default: true }
 		}
@@ -76,6 +77,10 @@ export class VariantDTO {
 	@IsNotEmpty()
 	@ApiModelProperty()
 	unit: string;
+
+	@IsNotEmpty()
+	@ApiModelProperty()
+	expieryDate: Date;
 
 	@IsNotEmpty()
 	@ApiModelProperty()
