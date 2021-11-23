@@ -40,6 +40,7 @@ import { PointOfSaleService } from './point-of-sale/point-of-sale.service';
 import { PointOfSaleModule } from './point-of-sale/point-of-sale.module';
 import { WebexPaymentsModule } from './webex-payments/webex-payments.module';
 import * as dotenv from 'dotenv';
+import { UnitModule } from './units/units.module';
 dotenv.config();
 
 @Global()
@@ -77,6 +78,7 @@ dotenv.config();
 		DeliveryBoyRatingsModule,
 		DeviceSettingsModule,
 		PointOfSaleModule,
+		UnitModule,
 		WebexPaymentsModule
 	],
 	controllers: [AppController, PointOfSaleController],

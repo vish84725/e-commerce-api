@@ -1033,6 +1033,8 @@ module.exports = [
 			"USER_STATUS_UPDATED": "User status updated successfully",
 			"USER_VERIFICATION_CODE_EXPIRED": "Verification code expired",
 			"USER_VERIFICATION_CODE_INVALID": "Verification code invalid",
+			"UNIT_ALREADY_EXIST": "Unit already exists",
+			"UNIT_SAVED": "Unit saved successfully",
 			"VERIFICATION_SENT_TO_MOBILE_NUMBER": "Account created successfully. A verification OTP sent On Register Mobile Number",
 			"WALLET_INSUFFICENT_AMOUNT": "Wallet amount is insufficient for this transaction",
 			"WRONG_OTP": "You entered the wrong OTP"
