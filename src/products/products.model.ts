@@ -6,6 +6,7 @@ import { UploadImageResponseDTO } from 'src/utils/app.model';
 
 export const ProductSchema = new mongoose.Schema({
 	title: { type: String },
+	itemCode: { type: String },
 	description: { type: String },
 	userId: { type: String },
 	barcode: { type: String },
