@@ -31,6 +31,11 @@ export const ProductSchema = new mongoose.Schema({
 			enable: { type: Boolean, default: true }
 		}
 	],
+	unitsAssociated: [
+		{
+			unitId: {type :String}
+		}
+	],
 	imageUrl: { type: String },
 	imageId: { type: String },
 	filePath: { type: String },
@@ -68,6 +73,13 @@ export class ProductImagesDTO {
 	@IsString()
 	@ApiModelProperty()
 	filePath: string;
+}
+
+export class UnitDTO{
+	@IsMongoId()
+	@IsNotEmpty()
+	@ApiModelProperty()
+	unitId: string;
 }
 
 export class VariantDTO {
@@ -110,6 +122,10 @@ export class ProductsSaveDTO {
 	@IsNotEmpty()
 	@ApiModelProperty()
 	categoryId: string;
+
+	@IsOptional()
+	@ApiModelProperty({type:[UnitDTO]})
+	unitsAssociated: Array<UnitDTO>;
 
 	@ApiModelProperty({ type: [VariantDTO] })
 	@ValidateNested({ each: true })
@@ -189,6 +205,12 @@ export class ProductsDTO {
 	@IsString()
 	@IsOptional()
 	type: String;
+
+	@IsOptional()
+	@Type(() => UnitDTO)
+	@ApiModelProperty({type:[UnitDTO]})
+	@ValidateNested({ each: true })
+	unitsAssociated: Array<UnitDTO>;
 
 	@IsMongoId()
 	@IsNotEmpty()
