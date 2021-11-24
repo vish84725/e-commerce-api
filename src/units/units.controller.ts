@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
 import { ApiBearerAuth, ApiOperation, ApiResponse, ApiUseTags } from "@nestjs/swagger";
 import { UsersDTO } from "../users/users.model";
-import { CommonResponseModel, ResponseBadRequestMessage, ResponseErrorMessage, ResponseMessage, ResponseSuccessMessage } from "src/utils/app.model";
+import { CommonResponseModel, ResponseBadRequestMessage, ResponseErrorMessage, ResponseMessage, ResponseSuccessMessage } from "../utils/app.model";
 import { GetUser } from "../utils/jwt.strategy";
 import { UtilService } from '../utils/util.service';
 import { UnitsResponseDTO, UnitsSaveDTO } from "./units.model";
