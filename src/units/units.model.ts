@@ -23,10 +23,6 @@ export class UnitsSaveDTO {
 	@IsOptional()
 	description: string;
 
-    @IsNumber()
-	@ApiModelProperty()
-	numberOfBaseUnits: number;
-
 }
 
 export class UnitsDTO {
@@ -44,9 +40,6 @@ export class UnitsDTO {
 	@IsOptional()
 	description: string;
 
-    @IsNumber()
-	@ApiModelProperty()
-	numberOfBaseUnits: number;
 }
 
 

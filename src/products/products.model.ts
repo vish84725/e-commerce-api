@@ -33,7 +33,8 @@ export const ProductSchema = new mongoose.Schema({
 	],
 	unitsAssociated: [
 		{
-			unitId: {type :String}
+			unitId: {type :String},
+			numberOfBaseUnits: {type:Number}
 		}
 	],
 	imageUrl: { type: String },
@@ -80,6 +81,11 @@ export class UnitDTO{
 	@IsNotEmpty()
 	@ApiModelProperty()
 	unitId: string;
+
+	@IsNumber()
+	@IsNotEmpty()
+	@ApiModelProperty()
+	numberOfBaseUnits:number;
 }
 
 export class VariantDTO {
